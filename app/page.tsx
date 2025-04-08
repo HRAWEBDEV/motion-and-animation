@@ -1,9 +1,14 @@
+import MotionOverview from './motion/overview/MotionOverview';
+import MotionLayout from './motion/layout/MotionLayout';
+
 export default function Home() {
  return (
-  <div>
-   <div className='p-4 uppercase text-center text-3xl font-bold border border-b-neutral-400'>
+  <div className='p-4'>
+   <div className='uppercase text-center text-3xl font-bold border-b border-b-neutral-400 pb-4 mb-8'>
     <h1>motion and animation</h1>
    </div>
+   <MotionOverview />
+   <MotionLayout />
   </div>
  );
 }
